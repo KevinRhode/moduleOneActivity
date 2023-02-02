@@ -1,0 +1,114 @@
+/* var for the page */
+:root {
+    --main-style-color: #77440b;
+    --main-bg-color: #07a70f;
+    --contact-info-width: 100%;
+}
+
+/* sets font for entire page */
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+  background-color: var(--main-bg-color);
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #a05345;
+}
+
+/* Add a background color and some padding around the form */
+.contact-info-style {
+
+  border-radius: 5px;
+  background-color: var(--main-style-color);
+  padding: 20px;
+  width: var(--contact-info-width);
+  margin-left: 25px;
+}
+/* content above form */
+.contact-info-header{
+
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--main-style-color);
+    padding: 20px;
+    margin: 20px;
+    width: var(--contact-info-width);
+    margin-left: 25px;
+}
+/* text for labels and input in contact form */
+.contact-info-style{
+  font-size: 18px;
+  font-weight: bolder;
+}
+.contact-info-object{
+  width: 400px;
+  padding-right: 5px;
+}
+/*  */
+.background-image-info{        
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/200454_web.jpg");
+    /* https://www.eurekalert.org/multimedia/900270 */
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+
+/* centering h1 info */
+header{
+    
+  position: fixed;    
+  top: auto;
+  right: 5%;
+    
+
+}
+.frog-list-content{
+ 
+  width: 100%;
+
+}
+
+main{
+  display: flex;
+}
+
+/* locked to bottom of screen */
+footer{
+
+    background-color: var(--main-style-color);
+    text-align: center;    
+    right: 0;
+    left: 0;
+    /* https://www.youtube.com/watch?v=1PB6HTvO8X8 CSS align to the bottom */
+
+    }
